@@ -1,0 +1,69 @@
+.user-total-score{
+   @include bg-gradient;
+}
+
+.user-portrait-img{
+   max-width: 150px;
+   max-height: 150px;
+   object-fit: cover;
+   border: 4px solid $fourth;
+   filter: drop-shadow(1px 3px 1px rgba(103, 103, 103, 0.35));
+
+   &.leader-face{
+      border: 1px solid $fourth;
+      width: 35px;
+      height: 35px;
+   }
+}
+
+.img-success{
+   border: 2px solid $primary;
+   filter: drop-shadow(1px 3px 1px rgba(103, 103, 103, 0.35));
+}
+
+.display-success{
+   cursor: pointer;
+}
+
+.table > :not(caption) > * > *{
+   padding: 0;
+}
+
+.display-userscore{
+   background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 0.75rem;
+
+    table{
+      thead tr{
+         border: 1px solid rgba($white, 0.6);
+        
+         th{
+            padding: 0.5rem;
+            @include border-radius-10;
+            border: 1px solid rgba($white, 0.6);
+         }
+      }
+      tr{
+         margin:2rem 0;
+         td{
+            border: 1px solid rgba($white, 0.6);
+            border-radius: 20px;
+         }
+      } 
+    }
+
+    table { 
+      counter-reset:case; 
+      } 
+       
+      td:first-child:before{ 
+          counter-increment:case; 
+          content:counter(case); 
+          font-size: 1.5rem;
+      }
+}
+
+
+// compteur tableau

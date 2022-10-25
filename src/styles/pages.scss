@@ -1,0 +1,22 @@
+.content-global{
+   background: $primary;
+   display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    padding: 1% 0;
+
+    body.leaderboard &{
+        background:url('../leaderboard-bg.svg') no-repeat center center;
+        background-size:cover;
+    }
+
+    body.register &{
+        background: $tertiary;
+    }
+}
+.container{
+    body.leaderboard &{
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,22 @@
+.nav-bar-link{
+   color: $white;
+   text-decoration: none;
+   font-family: $font-title;
+   letter-spacing: 1px;
+   font-size: 1.15rem;
+   // border: 1px solid rgba($white,0.6);
+   // padding: 0.5rem 1rem;
+   // border-radius: 20px;
+   margin: 0.5rem;
+   transition: all 350ms ease-in-out;
+   &:hover{
+      color:$secondary;
+      //border: 1px solid rgba($secondary,0.8);
+   }
+}
+
+.nav-bar-active{
+   @extend .nav-bar-link;
+   color:$secondary;
+   
+}

@@ -1,0 +1,13 @@
+@mixin transition-420{
+   transition: all 420ms ease-in-out;
+}
+
+
+@mixin bg-gradient{
+   background: rgb(255,255,255);
+   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 51%, rgba(246,246,246,1) 100%);
+}
+
+@mixin border-radius-10{
+   border-radius: 10px;
+}

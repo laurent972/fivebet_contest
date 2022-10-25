@@ -1,0 +1,48 @@
+.btn{
+   border: 0;
+   border-radius: 50px;
+   font-family: Poppins,sans-serif;
+   font-weight: 600;
+   padding: 0.8rem 1rem;
+   color: $white;
+   @include transition-420;
+   &:hover{
+      color: $white;
+   }
+  
+}
+
+
+.btn-primary{
+   @extend .btn;
+   background: $primary;
+   &:hover{
+      background: darken($primary, 20%)
+   }
+}
+
+.btn-secondary{
+   @extend .btn;
+   background: $secondary;
+   &:hover{
+      background: darken($secondary, 90%)
+   }
+}
+
+.btn-third{
+   @extend .btn;
+   background:$tertiary;
+   &:hover{
+      background: darken($tertiary, 20%)
+   }
+}
+
+.btn-small{
+   @extend .btn;
+   padding: 0.4rem 0.65rem;
+}
+
+.logout-button{
+   right: 5px;
+   top:5px;
+}

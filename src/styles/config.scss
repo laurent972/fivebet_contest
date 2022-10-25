@@ -1,0 +1,59 @@
+body{
+   font-family:$font-global;
+   line-height: 1;
+   font-size:1em;
+}
+
+h1{
+   font-family: $font-title;
+   color: $primary;
+   text-transform: uppercase;
+   font-style: italic;
+}
+
+h2,h3,h4{
+   @extend h1;
+}
+
+.title-h1{
+   @extend h1;
+}
+
+.font-title{
+   font-family: $font-title;
+   color: $primary;
+}
+
+.form-label {
+   font-weight: 600;
+}
+
+.app-logo{
+   height: auto;
+    margin-bottom: 3vh;
+    width: 190px;
+}
+
+.text-small{
+   font-size: 0.89em;
+}
+
+.text-white{
+   color: $white;
+}
+
+.text-primary-color{
+   color: $primary;
+}
+
+.text-secondary-color{
+   color: $secondary;
+}
+
+.text-third{
+   color: $tertiary;
+}
+
+.text-fourth{
+   color:darken($fourth, 20%) ;
+}
